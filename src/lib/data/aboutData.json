@@ -1,0 +1,98 @@
+{
+  "about": {
+    "title": "À propos",
+    "description": "Je suis une développeuse web basée à Montréal, Québec, actuellement étudiante en génie logiciel et diplômée en techniques d’intégration multimédia du Collège Maisonneuve. Si mon profil vous intéresse, n’hésitez pas à me contacter !",
+    "info": [
+      {
+        "name": "Nom",
+        "value": "Marie Dupont"
+      },
+      {
+        "name": "Email",
+        "value": ""
+      },
+      {
+        "name": "Localisation",
+        "value": ""
+      },
+      {
+        "name": "Expérience",
+        "value": ""
+      }
+    ]
+  },
+
+  "skills": {
+    "title": "Mes compétences",
+    "description": "Je suis passionnée par le développement web et j'ai acquis des compétences dans divers domaines. Voici quelques-unes de mes compétences clés :",
+    "skillsList": [
+      {
+        "icon": "",
+        "name": "JavaScript"
+      },
+      {
+        "icon": "",
+        "name": "HTML"
+      },
+      {
+        "icon": "",
+        "name": "CSS"
+      },
+      {
+        "icon": "",
+        "name": "React"
+      },
+      {
+        "icon": "",
+        "name": "Node.js"
+      },
+      {
+        "icon": "",
+        "name": "Git"
+      }
+    ]
+  },
+
+  "education": {
+    "title": "Mon parcours académique",
+    "description": "Je suis actuellement étudiante en génie logiciel à l'Université du Québec à Montréal (UQAM) et j'ai obtenu un diplôme en techniques d’intégration multimédia du Collège Maisonneuve.",
+    "items": [
+      {
+        "degree": "Techniques d’intégration multimédia",
+        "institution": "Collège Maisonneuve",
+        "duration": 2022
+      },
+      {
+        "degree": "Baccalauréat en génie logiciel",
+        "institution": "Université du Québec à Montréal (UQAM)",
+        "duration": 2025
+      }
+    ]
+  },
+  "experience": {
+    "title": "Expérience",
+    "description": "J'ai acquis une expérience précieuse dans le développement web à travers divers projets et stages. Voici quelques-unes de mes expériences professionnelles :",
+    "items": [
+      {
+        "jobTitle": "Stagiaire Développeuse Web",
+        "company": "Startup Innovante",
+        "duration": "Mai 2022 - Août 2022",
+        "responsibilities": [
+          "Développement d'une application web de gestion de projet.",
+          "Collaboration avec l'équipe de développement pour améliorer les fonctionnalités existantes.",
+          "Rédaction de documentation technique."
+        ]
+      },
+      {
+        "jobTitle": "Assistante Développeuse Web",
+        "company": "Agence Digitale",
+        "duration": "Janvier 2022 - Avril 2022",
+        "responsibilities": [
+          "Assistance dans le développement de sites web pour des clients.",
+          "Tests et débogage des applications web.",
+          "Participation aux réunions d'équipe pour discuter des progrès."
+        ]
+      }
+    ]
+  }
+}

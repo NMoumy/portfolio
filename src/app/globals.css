@@ -1,26 +1,109 @@
 @import "tailwindcss";
 
+/* Variables CSS globales */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Colors */
+  --background: #0d1320;
+  /* --background: #0A0E17; */
+  --accent: #bae4ff;
+  --primary: #18233a;
+  --secondary: #0b101a;
+  --tertiary: #89d2ff;
+  --text-color: #bed0dd;
+  --text-glassmorphic: #666666;
+
+  /* Variables pour les tailles d'écran */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 960px;
+  --breakpoint-xl: 1200px;
 }
 
+/* Définition des thèmes personnalisés */
 @theme inline {
   --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-accent: var(--accent);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-tertiary: var(--tertiary);
+  --color-tc: var(--text-color);
+  --color-gc: var(--text-glassmorphic);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Couche de base (styles globaux) */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  * {
+    @apply m-0 p-0 box-border max-w-screen overflow-x-hidden;
+  }
+
+  body {
+    @apply p-0 m-0 box-border bg-background text-tc;
+    font-family: var(--font-inter);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-white font-bold m-0 p-0;
+    /* color: white; */
+  }
+  h1 {
+    @apply tracking-tighter leading-tight text-4xl md:text-7xl;
+    /* color: white; */
+  }
+  h2 {
+    @apply text-3xl md:text-5xl leading-tight tracking-tight;
+  }
+  h3 {
+    @apply text-xl md:text-3xl pb-2;
+  }
+
+  a {
+    @apply text-white no-underline;
+    &:hover {
+      @apply text-tertiary transition-colors duration-300;
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Couche de composants */
+@layer components {
+  button {
+    @apply bg-primary text-white py-2 px-6 cursor-pointer font-semibold;
+
+    &:hover {
+      @apply bg-accent text-primary transition-colors duration-300;
+    }
+  }
+
+  .btn-tab {
+    @apply py-6 px-7 rounded-lg bg-primary text-white text-lg;
+
+    &:hover {
+      @apply bg-accent text-primary;
+    }
+  }
+  .btn-tab-active {
+    @apply py-6 px-7 rounded-lg bg-accent text-primary text-lg;
+  }
+}
+
+/* Couche d'utilitaires */
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+  .glassmorphic {
+    @apply bg-gc/10 backdrop-blur-sm border border-white/10;
+  }
+  .section-title {
+    @apply flex items-center justify-center gap-2 md:gap-3 mt-25;
+  }
 }
