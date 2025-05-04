@@ -2,7 +2,7 @@
   "about": {
     "title": "À propos",
     "description": "Je suis une développeuse web basée à Montréal, Québec, actuellement étudiante en génie logiciel et diplômée en techniques d’intégration multimédia du Collège Maisonneuve. Si mon profil vous intéresse, n’hésitez pas à me contacter !",
-    "info": [
+    "items": [
       {
         "name": "Nom",
         "value": "Marie Dupont"
@@ -25,7 +25,7 @@
   "skills": {
     "title": "Mes compétences",
     "description": "Je suis passionnée par le développement web et j'ai acquis des compétences dans divers domaines. Voici quelques-unes de mes compétences clés :",
-    "skillsList": [
+    "items": [
       {
         "icon": "",
         "name": "JavaScript"

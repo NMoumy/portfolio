@@ -62,7 +62,7 @@
     @apply text-3xl md:text-5xl leading-tight tracking-tight;
   }
   h3 {
-    @apply text-xl md:text-3xl pb-2;
+    @apply text-xl md:text-2xl pb-2;
   }
 
   a {
@@ -84,14 +84,17 @@
   }
 
   .btn-tab {
-    @apply py-6 px-7 rounded-lg bg-primary text-white text-lg;
-
-    &:hover {
-      @apply bg-accent text-primary;
-    }
+    @apply rounded-lg text-sm flex-1;
+    @apply lg:py-6 lg:px-7 lg:text-lg;
   }
   .btn-tab-active {
-    @apply py-6 px-7 rounded-lg bg-accent text-primary text-lg;
+    @apply bg-primary text-white;
+    &:hover {
+      @apply bg-[#233354] text-white;
+    }
+  }
+  .btn-tab-non-active {
+    @apply bg-accent text-primary;
   }
 }
 

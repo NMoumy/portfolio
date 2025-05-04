@@ -15,19 +15,19 @@ const AboutTabs = () => {
   const [activeTab, setActiveTab] = useState<TabKey>("about");
 
   return (
-    <div className="display-about w-7xl flex">
-      <div className="flex flex-col gap-7 h-full w-1/4 pX-2">
+    <div className="w-7xl flex flex-col lg:flex-row px-5">
+      <div className="flex flex-row py-1 lg:pb-0 pb-10 w-full lg:flex-col lg:w-1/4 gap-2 lg:gap-7 h-full px-2">
         {tabs.map((tab) => (
           <button
             key={tab.key}
-            className={`${activeTab === tab.key ? "btn-tab-active" : "btn-tab"}`}
+            className={`btn-tab ${activeTab === tab.key ? "btn-tab-non-active" : "btn-tab-active"}`}
             onClick={() => setActiveTab(tab.key)}
           >
             {tab.label}
           </button>
         ))}
       </div>
-      <div className="h-full pl-15 flex-1">
+      <div className="h-full pl-5 lg:pl-15 flex-1">
         <AboutContent activeTab={activeTab as TabKey} />
       </div>
     </div>
