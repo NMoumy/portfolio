@@ -84,7 +84,7 @@
   }
 
   .btn-tab {
-    @apply rounded-lg text-sm flex-1;
+    @apply rounded-lg text-sm;
     @apply lg:py-6 lg:px-7 lg:text-lg;
   }
   .btn-tab-active {

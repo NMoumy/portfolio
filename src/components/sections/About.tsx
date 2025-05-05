@@ -9,7 +9,7 @@ const About = () => {
           Apprenez à me <span className="text-accent">connaître !</span>
         </h2>
       </div>
-      <div className="flex flex-1 w-full justify-center items-center mb-25">
+      <div className="flex flex-1 w-full justify-center mt-25 ">
         <AboutTabs />
       </div>
     </section>

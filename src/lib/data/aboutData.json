@@ -9,15 +9,15 @@
       },
       {
         "name": "Email",
-        "value": ""
+        "value": "Moumyndiaye@outlook.com"
       },
       {
         "name": "Localisation",
-        "value": ""
+        "value": "Canada, Montréal"
       },
       {
-        "name": "Expérience",
-        "value": ""
+        "name": "Langues",
+        "value": "Française, Anglais fonctionnel"
       }
     ]
   },
@@ -27,28 +27,36 @@
     "description": "Je suis passionnée par le développement web et j'ai acquis des compétences dans divers domaines. Voici quelques-unes de mes compétences clés :",
     "items": [
       {
-        "icon": "",
-        "name": "JavaScript"
+        "name": "JavaScript",
+        "icon": "SiJavascript"
       },
       {
-        "icon": "",
-        "name": "HTML"
+        "name": "HTML",
+        "icon": "SiHtml5"
       },
       {
-        "icon": "",
-        "name": "CSS"
+        "name": "CSS",
+        "icon": "SiCss3"
       },
       {
-        "icon": "",
-        "name": "React"
+        "name": "React",
+        "icon": "SiReact"
       },
       {
-        "icon": "",
-        "name": "Node.js"
+        "name": "Node.js",
+        "icon": "SiNodedotjs"
       },
       {
-        "icon": "",
-        "name": "Git"
+        "name": "Git",
+        "icon": "SiGit"
+      },
+      {
+        "name": "Node.js",
+        "icon": "SiNodedotjs"
+      },
+      {
+        "name": "Git",
+        "icon": "SiGit"
       }
     ]
   },
@@ -59,13 +67,15 @@
     "items": [
       {
         "degree": "Techniques d’intégration multimédia",
+        "diploma": "DEC",
         "institution": "Collège Maisonneuve",
-        "duration": 2022
+        "duration": "2022-2024"
       },
       {
-        "degree": "Baccalauréat en génie logiciel",
-        "institution": "Université du Québec à Montréal (UQAM)",
-        "duration": 2025
+        "degree": "Génie logiciel",
+        "diploma": "Baccalauréat",
+        "institution": "École de technologie supérieur (ÉTS)",
+        "duration": "2024-present"
       }
     ]
   },
