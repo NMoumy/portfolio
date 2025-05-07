@@ -59,10 +59,10 @@
     /* color: white; */
   }
   h2 {
-    @apply text-3xl md:text-5xl leading-tight tracking-tight;
+    @apply text-2xl sm:text-3xl md:text-5xl leading-tight tracking-tight;
   }
   h3 {
-    @apply text-xl md:text-2xl pb-2;
+    @apply text-xl md:text-2xl;
   }
 
   a {
@@ -85,7 +85,7 @@
 
   .btn-tab {
     @apply rounded-lg text-sm;
-    @apply lg:py-6 lg:px-7 lg:text-lg;
+    @apply lg:py-6 lg:px-7 lg:text-lg py-3;
   }
   .btn-tab-active {
     @apply bg-primary text-white;

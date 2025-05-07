@@ -24,7 +24,7 @@
 
   "skills": {
     "title": "Mes compétences",
-    "description": "Je suis passionnée par le développement web et j'ai acquis des compétences dans divers domaines. Voici quelques-unes de mes compétences clés :",
+    "description": "Je des connaisance dans des language comme ... des cms ... firebase et Voici quelques-unes de mes autres compétences clés :",
     "items": [
       {
         "name": "JavaScript",
@@ -32,11 +32,11 @@
       },
       {
         "name": "HTML",
-        "icon": "SiHtml5"
+        "icon": "Wordpress"
       },
       {
         "name": "CSS",
-        "icon": "SiCss3"
+        "icon": "PHP"
       },
       {
         "name": "React",
@@ -44,7 +44,7 @@
       },
       {
         "name": "Node.js",
-        "icon": "SiNodedotjs"
+        "icon": "nextjs"
       },
       {
         "name": "Git",
@@ -52,11 +52,15 @@
       },
       {
         "name": "Node.js",
-        "icon": "SiNodedotjs"
+        "icon": "figma"
       },
       {
         "name": "Git",
-        "icon": "SiGit"
+        "icon": "Java"
+      },
+      {
+        "name": "CSS",
+        "icon": "Firebase"
       }
     ]
   },
