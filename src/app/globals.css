@@ -96,6 +96,18 @@
   .btn-tab-non-active {
     @apply bg-accent text-primary;
   }
+
+  .swiper-pagination-bullet {
+    @apply text-primary;
+  }
+  .swiper-pagination-bullet-active::after {
+    @apply text-accent;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    @apply text-accent;
+  }
 }
 
 /* Couche d'utilitaires */
