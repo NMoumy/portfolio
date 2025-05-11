@@ -37,11 +37,11 @@
   }
 
   * {
-    @apply m-0 p-0 box-border max-w-screen overflow-x-hidden;
+    @apply m-0 p-0 box-border;
   }
 
   body {
-    @apply p-0 m-0 box-border bg-background text-tc;
+    @apply p-0 m-0 box-border bg-background text-tc max-w-screen overflow-x-hidden;
     font-family: var(--font-inter);
   }
 
@@ -70,6 +70,9 @@
     &:hover {
       @apply text-tertiary transition-colors duration-300;
     }
+  }
+  section {
+    @apply max-h-[1000px];
   }
 }
 
@@ -119,6 +122,6 @@
     @apply bg-gc/10 backdrop-blur-sm border border-white/10;
   }
   .section-title {
-    @apply flex items-center justify-center gap-2 md:gap-3 mt-25;
+    @apply flex items-center justify-center gap-2 md:gap-3 pt-25;
   }
 }

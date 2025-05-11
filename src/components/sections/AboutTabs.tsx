@@ -16,7 +16,7 @@ const AboutTabs = () => {
 
   return (
     <div className="w-7xl flex flex-col lg:flex-row px-5">
-      <div className="flex flex-row lg:pb-0 pb-10 w-full lg:flex-col lg:w-1/4 gap-2 lg:gap-7 px-2 flex-wrap lg:h-2/3">
+      <div className="flex flex-row lg:pb-0 pb-10 w-full lg:flex-col lg:w-1/4 gap-2 lg:gap-7 px-2 flex-wrap md:flex-nowrap lg:h-2/3">
         {tabs.map((tab) => (
           <button
             key={tab.key}
