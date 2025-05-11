@@ -100,16 +100,19 @@
     @apply bg-accent text-primary;
   }
 
-  .swiper-pagination-bullet {
-    @apply text-primary;
-  }
-  .swiper-pagination-bullet-active::after {
-    @apply text-accent;
-  }
-
   .swiper-button-next::after,
   .swiper-button-prev::after {
     @apply text-accent;
+  }
+
+  .services-div {
+    @apply h-[500px] w-3/4 py-8;
+
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    h3 {
+      @apply text-center text-xl md:text-xl lg:text-2xl;
+    }
   }
 }
 
