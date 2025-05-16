@@ -1,15 +1,53 @@
-import Link from "next/link";
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
+import { FiMenu, FiX } from "react-icons/fi";
+import NavLink from "./NavLink";
 
 const NavBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleMenu = () => setIsOpen(!isOpen);
+
+  const navItems = [
+    { href: "#hero", label: "Home" },
+    { href: "#about", label: "About" },
+    { href: "#projects", label: "Work" },
+    { href: "#contact", label: "Contact" },
+  ];
+
   return (
-    <nav className="top-5 left-1/2 transform -translate-x-1/2 glassmorphic z-50 px-20 py-5 fixed rounded-2xl">
-      <div className="flex gap-4 text-white">
-        <Link href="#hero">Accueil</Link>
-        <Link href="#about">About</Link>
-        <Link href="#projects">Projet</Link>
-        <Link href="#services">Services</Link>
+    <nav className="fixed top-0 left-0 w-full z-50 bg-transparent p-4">
+      <div className="flex justify-end items-center">
+        <button
+          onClick={toggleMenu }
+          className={`text-white text-2xl p-3 glassmorphic rounded-xl focus:outline-none transition-all duration-200 ${
+    isOpen ? "hidden" : ""
+  }`}
+        >
+          <FiMenu />
+        </button>
       </div>
+
+      {isOpen && (
+        <div className="fixed top-0 right-0 h-1/3 w-50 glassmorphic shadow-lg overflow-hidden z-50 p-4 rounded-xl m-4 flex flex-col justify-center items-center">
+          <button
+            onClick={toggleMenu}
+            className="absolute top-0 p-3 right-0 text-2xl bg-secondary rounded-xl border border-white/10 hover:text-red-800"
+          >
+            <FiX />
+          </button>
+          <ul className="w-full text-center space-y-3">
+            {navItems.map((item) => (
+              <NavLink
+                key={item.href}
+                href={item.href}
+                label={item.label}
+                onClick={toggleMenu}
+              />
+            ))}
+          </ul>
+        </div>
+      )}
     </nav>
   );
 };
