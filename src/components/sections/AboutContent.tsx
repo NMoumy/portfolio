@@ -14,16 +14,12 @@ const AboutContent = ({ activeTab }: AboutContentProps) => {
 
   // Cette fonction rend la section "About" de la page.
   const renderAboutSection = () => (
-    <div className="grid grid-cols-2">
+    <div className="flex flex-col w-full flex-1">
       {content.items.map((item, index) => {
         if (!("name" in item && "value" in item)) return null;
-
-        const row = Math.floor(index / 2);
-        const isFirstInRow = index % 2 === 0;
-        const bgColor =
-          row % 2 === 0 ? (isFirstInRow ? "bg-primary" : "bg-[#233354]") : isFirstInRow ? "bg-[#233354]" : "bg-primary";
         return (
-          <div key={index} className={`p-4 ${bgColor}`}>
+          <div key={index} className={`flex flex-col w-full p-2 md:p-6
+              ${index % 2 === 0 ? "bg-[#233354]" : "bg-primary"}`}>
             <p className="text-white">
               <strong className="text-tc">{item.name} :</strong> {item.value}
             </p>
@@ -79,7 +75,7 @@ const AboutContent = ({ activeTab }: AboutContentProps) => {
             >
               <p className="text-white text-sm pb-2">{edu.institution}</p>
               <p className="text-sm font-semibold pb-1">{edu.diploma}</p>
-              <p className="text-white text-lg font-bold pb-2">{edu.degree}</p>
+              <p className="text-white md:text-lg font-bold pb-2">{edu.degree}</p>
               <p className="text-white text-sm">{edu.duration}</p>
             </div>
           )
@@ -101,7 +97,7 @@ const AboutContent = ({ activeTab }: AboutContentProps) => {
               ${index % 2 === 0 ? "bg-[#233354]" : "bg-primary"}`}
             >
               <p className=" text-sm font-semibol pb-2">{exp.company}</p>
-              <p className="text-white text-lg font-bold pb-2">{exp.jobTitle}</p>
+              <p className="text-white md:text-lg font-bold pb-2">{exp.jobTitle}</p>
               <p className="text-white text-sm">{exp.duration}</p>
             </div>
           )

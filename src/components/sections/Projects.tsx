@@ -11,7 +11,7 @@ import projectData from "@/lib/data/projectData.json";
 
 const Projects = () => {
   return (
-    <section id="projects" className="bg-secondary h-screen flex flex-col">
+    <section id="projects" className="h-screen flex flex-col">
       <h2 className="section-title text-center mb-4">
         Un aperçu de <span className="text-accent">mes projets</span>
       </h2>

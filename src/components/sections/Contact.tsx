@@ -1,5 +1,5 @@
 import React from "react";
-import { FaEnvelope, FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
 import ContactForm from "./ContactForm";
 
 const contactInfo = [
@@ -20,13 +20,7 @@ const contactInfo = [
     label: "GitHub",
     description: "NMoumy",
     link: "https://github.com/NMoumy",
-  },
-  {
-    icon: <FaInstagram />,
-    label: "Instagram",
-    description: "@DevMo",
-    link: "https://instagram.com/DevMo",
-  },
+  }
 ];
 
 const Contact = () => {
