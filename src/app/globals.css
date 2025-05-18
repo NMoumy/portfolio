@@ -128,3 +128,67 @@
     @apply flex items-center justify-center gap-2 md:gap-3 pt-25;
   }
 }
+
+/*//////////////////////////////////////////////////////////////*/
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-2000px);
+  }
+}
+
+#stars, #stars:after,
+#stars2, #stars2:after,
+#stars3, #stars3:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: " ";
+  background: transparent;
+  display: block;
+}
+
+#stars {
+  width: 1px;
+  height: 1px;
+  box-shadow: 
+    1024px 1943px #FFF, 352px 1531px #FFF, 885px 1180px #FFF, 
+    1364px 1286px #FFF, 1046px 1927px #FFF, 1431px 642px #FFF, 
+    473px 1847px #FFF, 1083px 1347px #FFF, 1411px 198px #FFF; /* tu peux en ajouter + */
+  animation: animStar 50s linear infinite;
+}
+
+#stars:after {
+  top: 2000px;
+  box-shadow: inherit;
+}
+
+#stars2 {
+  width: 2px;
+  height: 2px;
+  box-shadow: 
+    1124px 743px #FFF, 122px 631px #FFF, 785px 380px #FFF,
+    1164px 786px #FFF, 846px 927px #FFF, 831px 442px #FFF;
+  animation: animStar 100s linear infinite;
+}
+
+#stars2:after {
+  top: 2000px;
+  box-shadow: inherit;
+}
+
+#stars3 {
+  width: 3px;
+  height: 3px;
+  box-shadow:
+    424px 1043px #FFF, 652px 131px #FFF, 985px 780px #FFF;
+  animation: animStar 150s linear infinite;
+}
+
+#stars3:after {
+  top: 2000px;
+  box-shadow: inherit;
+}
