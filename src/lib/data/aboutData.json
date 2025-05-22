@@ -1,15 +1,15 @@
 {
   "about": {
     "title": "À propos",
-    "description": "Je suis une développeuse web basée à Montréal, Québec, actuellement étudiante en génie logiciel et diplômée en techniques d’intégration multimédia du Collège Maisonneuve. Si mon profil vous intéresse, n’hésitez pas à me contacter !",
+    "description": "Je m'appelle Moumy Ndiaye, étudiante en génie logiciel passionnée par la programmation et le design d’interface. Curieuse et motivée, je suis à la recherche d’opportunités pour développer mes compétences et contribuer à des projets innovants.",
     "items": [
       {
         "name": "Nom",
-        "value": "Marie Dupont"
+        "value": "Sokhna Moumy Ndaieye"
       },
       {
-        "name": "Email",
-        "value": "Moumyndiaye@outlook.com"
+        "name": "GitHub",
+        "value": "NMoumy"
       },
       {
         "name": "Localisation",
@@ -24,18 +24,18 @@
 
   "skills": {
     "title": "Mes compétences",
-    "description": "Je des connaisance dans des language comme ... des cms ... firebase et Voici quelques-unes de mes autres compétences clés :",
+    "description": "Je maîtrise plusieurs langages comme PHP, JavaScript, Java, Python et C#, ainsi que des outils comme WordPress, React, React Native, Next.js, Firebase, SQL et Figma pour la conception. Voici une représentation graphique de mes compétences clés :",
     "items": [
       {
         "name": "JavaScript",
         "icon": "SiJavascript"
       },
       {
-        "name": "HTML",
+        "name": "Wordpress",
         "icon": "Wordpress"
       },
       {
-        "name": "CSS",
+        "name": "PHP",
         "icon": "PHP"
       },
       {
@@ -43,7 +43,7 @@
         "icon": "SiReact"
       },
       {
-        "name": "Node.js",
+        "name": "nextjs",
         "icon": "nextjs"
       },
       {
@@ -51,15 +51,15 @@
         "icon": "SiGit"
       },
       {
-        "name": "Node.js",
+        "name": "figma",
         "icon": "figma"
       },
       {
-        "name": "Git",
+        "name": "Java",
         "icon": "Java"
       },
       {
-        "name": "CSS",
+        "name": "Firebase",
         "icon": "Firebase"
       }
     ]
@@ -67,44 +67,34 @@
 
   "education": {
     "title": "Mon parcours académique",
-    "description": "Je suis actuellement étudiante en génie logiciel à l'Université du Québec à Montréal (UQAM) et j'ai obtenu un diplôme en techniques d’intégration multimédia du Collège Maisonneuve.",
+    "description": "Je suis actuellement étudiante en génie logiciel à l’École de technologie supérieure (ÉTS). J’ai obtenu un diplôme en techniques d’intégration multimédia au Collège Maisonneuve, où j’ai développé une solide base en design, développement web et multimédia.",
     "items": [
-      {
-        "degree": "Techniques d’intégration multimédia",
-        "diploma": "DEC",
-        "institution": "Collège Maisonneuve",
-        "duration": "2022-2024"
-      },
       {
         "degree": "Génie logiciel",
         "diploma": "Baccalauréat",
         "institution": "École de technologie supérieur (ÉTS)",
-        "duration": "2024-present"
+        "duration": "Automne 2024 - Présent"
+      },
+      {
+        "degree": "Techniques d’intégration multimédia",
+        "diploma": "DEC",
+        "institution": "Collège Maisonneuve",
+        "duration": "2021 - 2024"
       }
     ]
   },
   "experience": {
     "title": "Expérience",
-    "description": "J'ai acquis une expérience précieuse dans le développement web à travers divers projets et stages. Voici quelques-unes de mes expériences professionnelles :",
+    "description": "J’ai effectué un stage en intégration web, où j’ai appris à travailler en équipe dans un environnement professionnel. Grâce à mon DEC en technique d'intégration multimédia, j’ai aussi eu l’occasion de participer à plusieurs projets variés, incluant des applications web, des jeux vidéo et du design d’interface.",
     "items": [
       {
-        "jobTitle": "Stagiaire Développeuse Web",
-        "company": "Startup Innovante",
-        "duration": "Mai 2022 - Août 2022",
+        "jobTitle": "Stagiaire Intégration Web",
+        "company": "Cameleon Agence Web Inc.",
+        "duration": "Mars 2024 - Mai 2024",
         "responsibilities": [
           "Développement d'une application web de gestion de projet.",
           "Collaboration avec l'équipe de développement pour améliorer les fonctionnalités existantes.",
           "Rédaction de documentation technique."
-        ]
-      },
-      {
-        "jobTitle": "Assistante Développeuse Web",
-        "company": "Agence Digitale",
-        "duration": "Janvier 2022 - Avril 2022",
-        "responsibilities": [
-          "Assistance dans le développement de sites web pour des clients.",
-          "Tests et débogage des applications web.",
-          "Participation aux réunions d'équipe pour discuter des progrès."
         ]
       }
     ]

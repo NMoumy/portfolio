@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 const Hero = () => {
   return (
     <header
@@ -10,13 +12,25 @@ const Hero = () => {
       <div id="stars2" className="stars2 z-0"></div>
       <div id="stars3" className="stars3 z-0"></div>
 
-      <div className="z-10">
+      <div className="z-10 relative">
+        <Image
+          src="/heroIcon/LeftIcon.png"
+          width={50}
+          height={50}
+          alt="Description of the icon"
+          className="absolute left-[-70px] top-[-40px] hidden sm:block"
+        />
+        <Image
+          src="/heroIcon/RightIcon.png"
+          width={50}
+          height={50}
+          alt="Description of the icon"
+          className="absolute right-[-70px] top-[-40px] hidden sm:block"
+        />
         <h1 className="">Salut ! Mon nom est</h1>
-        <h1 className="text-accent">Moumy Ndiaye</h1>
-        <p className="text-lg">Je suis une développeuse logiciel</p>
-        <button className="mt-2 glassmorphic py-3 px-7 rounded-lg hover:text-white">
-          Me contacter
-        </button>
+        <h1 className="text-accent focus-in-expand">Moumy Ndiaye</h1>
+        <p className="text-lg p-2">Je suis une développeuse logiciel</p>
+        <button className="mt-2 glassmorphic py-3 px-7 rounded-lg hover:text-white">Me contacter</button>
       </div>
     </header>
   );

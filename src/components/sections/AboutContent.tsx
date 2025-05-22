@@ -61,7 +61,7 @@ const AboutContent = ({ activeTab }: AboutContentProps) => {
 
   // Cette fonction rend la section "Education" de la page.
   const renderEducationSection = () => (
-    <div className="flex flex-col md:flex-row">
+    <div className="flex flex-col ">
       {content.items.map(
         (edu, index) =>
           "degree" in edu &&
@@ -70,7 +70,7 @@ const AboutContent = ({ activeTab }: AboutContentProps) => {
           "duration" in edu && (
             <div
               key={index}
-              className={`flex flex-col w-full md:w-1/2 p-2 md:p-6
+              className={`flex flex-col w-full p-4
               ${index % 2 === 0 ? "bg-[#233354]" : "bg-primary"}`}
             >
               <p className="text-white text-sm pb-2">{edu.institution}</p>
@@ -85,7 +85,7 @@ const AboutContent = ({ activeTab }: AboutContentProps) => {
 
   // Cette fonction rend la section "Experience" de la page.
   const renderExperienceSection = () => (
-    <div className="flex flex-col md:flex-row">
+    <div className="flex flex-col">
       {content.items.map(
         (exp, index) =>
           "jobTitle" in exp &&
@@ -93,7 +93,7 @@ const AboutContent = ({ activeTab }: AboutContentProps) => {
           "duration" in exp && (
             <div
               key={index}
-              className={`p-4 w-full md:w-1/2
+              className={`p-4 w-full
               ${index % 2 === 0 ? "bg-[#233354]" : "bg-primary"}`}
             >
               <p className=" text-sm font-semibol pb-2">{exp.company}</p>

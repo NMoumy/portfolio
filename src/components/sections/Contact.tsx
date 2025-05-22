@@ -32,7 +32,7 @@ const Contact = () => {
         </h2>
       </div>
 
-      <div className="flex flex-1 mt-25 lg:flex-row flex-col-reverse justify-end lg:justify-center lg:items-start items-center p-4 gap-10">
+      <div className="flex flex-1 mt-15 lg:flex-row flex-col-reverse justify-end lg:justify-center lg:items-start items-center p-4 gap-10">
         {/* Formulaire */}
         <ContactForm />
 
@@ -51,7 +51,7 @@ const Contact = () => {
                 <span className="text-accent">{item.icon}</span>
                 <span className="text-gray-300">
                   <strong>{item.label} : </strong>
-                  <a href={item.link} className="hover:underline text-white">
+                  <a href={item.link} target="_blank" className="hover:underline text-white">
                     {item.description}
                   </a>
                 </span>
