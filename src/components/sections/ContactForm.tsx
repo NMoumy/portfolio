@@ -57,7 +57,7 @@ const ContactForm = () => {
   }, [status]);
 
   return (
-  <div className="relative flex flex-col items-center w-5/6 sm:w-2/3 lg:w-1/3">
+  <div className="relative flex flex-col items-center w-10/11 sm:w-2/3 lg:w-1/3">
     {/* PopUp notification*/}
     {status === "success" && (
       <div className="fixed top-4 left-1/2 transform -translate-x-1/2 bg-green-600 text-white px-6 py-3 rounded shadow-lg z-50">

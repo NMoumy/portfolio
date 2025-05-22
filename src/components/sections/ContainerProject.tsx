@@ -1,11 +1,12 @@
+import Link from "next/link";
 import React from "react";
+import { IoIosArrowRoundForward } from "react-icons/io";
 
 type Project = {
   name: string;
   description: string;
   technologies: string[];
-  repository: string;
-  liveDemo?: string;
+  projectId: string;
 };
 
 type ContainerProjectProps = {
@@ -22,14 +23,12 @@ const ContainerProject = ({ project }: ContainerProjectProps) => {
         <p className="text-xs mb-4">
           <strong>Technologies :</strong> {project.technologies.join(", ")}
         </p>
-        <a href={project.repository} className="text-accent underline" target="_blank" rel="noopener noreferrer">
-          Voir le code
-        </a>
-        {project.liveDemo && (
-          <a href={project.liveDemo} className="text-accent underline ml-4" target="_blank">
-            Voir la démo
-          </a>
-        )}
+        <div className="flex ">
+          <Link href={`/projects/${project.projectId}`} className="text-tertiary inline-flex items-center gap-2">
+            En savoir plus
+            <IoIosArrowRoundForward className="w-8 h-8 rotate-[-45deg]" />
+          </Link>
+        </div>
       </div>
     </div>
   );

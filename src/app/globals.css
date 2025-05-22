@@ -127,6 +127,9 @@
   .section-title {
     @apply flex items-center justify-center gap-2 md:gap-3 pt-25;
   }
+  .no-max-h {
+    max-height: none !important;
+  }
 }
 
 /*//////////////////////////////////////////////////////////////*/
@@ -140,9 +143,12 @@
   }
 }
 
-#stars, #stars:after,
-#stars2, #stars2:after,
-#stars3, #stars3:after {
+#stars,
+#stars:after,
+#stars2,
+#stars2:after,
+#stars3,
+#stars3:after {
   position: absolute;
   top: 0;
   left: 0;
@@ -154,10 +160,8 @@
 #stars {
   width: 1px;
   height: 1px;
-  box-shadow: 
-    1024px 1943px #FFF, 352px 1531px #FFF, 885px 1180px #FFF, 
-    1364px 1286px #FFF, 1046px 1927px #FFF, 1431px 642px #FFF, 
-    473px 1847px #FFF, 1083px 1347px #FFF, 1411px 198px #FFF; /* tu peux en ajouter + */
+  box-shadow: 1024px 1943px #fff, 352px 1531px #fff, 885px 1180px #fff, 1364px 1286px #fff, 1046px 1927px #fff,
+    1431px 642px #fff, 473px 1847px #fff, 1083px 1347px #fff, 1411px 198px #fff; /* tu peux en ajouter + */
   animation: animStar 50s linear infinite;
 }
 
@@ -169,9 +173,8 @@
 #stars2 {
   width: 2px;
   height: 2px;
-  box-shadow: 
-    1124px 743px #FFF, 122px 631px #FFF, 785px 380px #FFF,
-    1164px 786px #FFF, 846px 927px #FFF, 831px 442px #FFF;
+  box-shadow: 1124px 743px #fff, 122px 631px #fff, 785px 380px #fff, 1164px 786px #fff, 846px 927px #fff,
+    831px 442px #fff;
   animation: animStar 100s linear infinite;
 }
 
@@ -183,8 +186,7 @@
 #stars3 {
   width: 3px;
   height: 3px;
-  box-shadow:
-    424px 1043px #FFF, 652px 131px #FFF, 985px 780px #FFF;
+  box-shadow: 424px 1043px #fff, 652px 131px #fff, 985px 780px #fff;
   animation: animStar 150s linear infinite;
 }
 

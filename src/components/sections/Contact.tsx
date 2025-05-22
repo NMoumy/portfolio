@@ -13,31 +13,31 @@ const contactInfo = [
     icon: <FaLinkedin />,
     label: "LinkedIn",
     description: "Moumy Ndiaye",
-    link: "https://www.linkedin.com/in/moumyndiaye/",
+    link: "https://www.linkedin.com/in/moumy-ndiaye-31988b290/",
   },
   {
     icon: <FaGithub />,
     label: "GitHub",
     description: "NMoumy",
     link: "https://github.com/NMoumy",
-  }
+  },
 ];
 
 const Contact = () => {
   return (
-    <section id="contact" className="min-h-screen flex flex-col items-center">
+    <section id="contact" className="no-max-h min-h-screen flex flex-col items-center">
       <div>
         <h2 className="section-title">
           Me <span className="text-accent">contacter</span>
         </h2>
       </div>
 
-      <div className="flex flex-1 mt-15 lg:flex-row flex-col-reverse justify-end lg:justify-center lg:items-start items-center p-4 gap-10">
+      <div className="flex flex-1 mt-15 lg:flex-row flex-col-reverse justify-end lg:justify-center lg:items-start items-center p-4 gap-10 pb-10">
         {/* Formulaire */}
         <ContactForm />
 
         {/* Informations */}
-        <div className="bg-primary p-6 rounded-xl shadow-md w-5/6 sm:w-2/3 lg:w-1/3 gap-3 flex flex-col">
+        <div className="bg-primary p-6 rounded-xl shadow-md w-10/11 sm:w-2/3 lg:w-1/3 gap-3 flex flex-col">
           <h3 className="text-xl">
             Disponible pour des offres professionnels <br /> et de projets web !
           </h3>
@@ -59,7 +59,6 @@ const Contact = () => {
             ))}
           </ul>
         </div>
-
       </div>
     </section>
   );

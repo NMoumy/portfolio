@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import ContactButton from "../ui/ContactButton";
 
 const Hero = () => {
   return (
@@ -30,7 +31,7 @@ const Hero = () => {
         <h1 className="">Salut ! Mon nom est</h1>
         <h1 className="text-accent focus-in-expand">Moumy Ndiaye</h1>
         <p className="text-lg p-2">Je suis une développeuse logiciel</p>
-        <button className="mt-2 glassmorphic py-3 px-7 rounded-lg hover:text-white">Me contacter</button>
+        <ContactButton />
       </div>
     </header>
   );
