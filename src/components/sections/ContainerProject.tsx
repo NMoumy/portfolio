@@ -23,9 +23,12 @@ const ContainerProject = ({ project }: ContainerProjectProps) => {
         <p className="text-xs mb-4">
           <strong>Technologies :</strong> {project.technologies.join(", ")}
         </p>
-        <div className="flex ">
-          <Link href={`/projects/${project.projectId}`} className="text-tertiary inline-flex items-center gap-2">
-            En savoir plus
+        <div className="flex flex-row hover-underline-animation">
+          <Link
+            href={`/projects/${project.projectId}`}
+            className="flex items-center gap-2 w-fit text-tertiary"
+          >
+            <span className="">En savoir plus</span>
             <IoIosArrowRoundForward className="w-8 h-8 rotate-[-45deg]" />
           </Link>
         </div>
