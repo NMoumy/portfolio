@@ -1,9 +1,7 @@
 import projectData from "../../../lib/data/projectData.json";
 
 export default function Page({ params }: { params: { projectId: string } }) {
-  const project = projectData.find(
-    (p) => p.projectId === params.projectId
-  );
+  const project = projectData.find((p) => p.projectId === params.projectId);
 
   if (!project) {
     return <h1>Projet introuvable</h1>;
@@ -18,4 +16,10 @@ export default function Page({ params }: { params: { projectId: string } }) {
       </p>
     </section>
   );
+}
+
+export async function generateStaticParams() {
+  return projectData.map((project) => ({
+    projectId: project.projectId,
+  }));
 }
