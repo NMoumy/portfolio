@@ -13,7 +13,7 @@ const Services = () => {
   const [activeTab, setActiveTab] = useState<TabKeyService>("services");
 
   return (
-    <section id="services" className="h-screen">
+    <section id="services" className="no-max-h min-h-screen">
       <h2 className="section-title">
         Mes <span className="text-accent">services</span>
       </h2>

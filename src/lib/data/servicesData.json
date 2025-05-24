@@ -1,10 +1,62 @@
 {
   "services": {
     "title": "Ce que je peux réaliser pour vous !",
-    "description": "Je techniqesse, hésitez pas à me contacter !"
+    "description": "Je maîtrise plusieurs aspects du développement web. Voici ce que je peux faire pour vous :",
+    "items": [
+      {
+        "title": "Création de sites vitrines",
+        "content": "Sites modernes pour présenter votre activité, vos projets, votre portfolio, etc."
+      },
+      {
+        "title": "Développement d'applications web",
+        "content": "Applications personnalisées pour la gestion, réservation, e-learning, etc."
+      },
+      {
+        "title": "Responsive Design",
+        "content": "Sites web adaptés aux mobiles et tablettes."
+      },
+      {
+        "title": "Optimisation SEO de base",
+        "content": "Structure et balises optimisées pour booster votre visibilité sur Google."
+      },
+      {
+        "title": "Refonte et optimisation de site existant",
+        "content": "Modernisation du design et amélioration des performances."
+      },
+      {
+        "title": "Maintenance et mises à jour",
+        "content": "Assurer le bon fonctionnement de votre site dans la durée."
+      }
+    ]
   },
+
   "process": {
     "title": "Mon processus de travail",
-    "description": "hésitez pas à me contacter !"
+    "steps": [
+      {
+        "title": "1. Analyse & planification",
+        "content": "Définir vos objectifs et public cible, étudier vos besoins et élaborons un plan d'action."
+      },
+      {
+        "title": "2. Design UX/UI",
+        "content": "Création de maquettes interactives pour valider l'ergonomie et l'identité visuelle."
+      },
+      {
+        "title": "3. Développement technique",
+        "content": "Intégration des maquettes et développement des fonctionnalités spécifiques."
+      },
+      {
+        "title": "4. Tests & ajustements",
+        "content": "Contrôle qualité, test multi-supports, optimisation des performances."
+      },
+      {
+        "title": "5. Déploiement",
+        "content": "Mise en ligne de votre site ou application, configuration de l'hébergement."
+      },
+      {
+        "title": "6. Suivi & évolutions",
+        "content": "Maintenance, support, et améliorations continues selon vos besoins futurs."
+      }
+    ]
   }
 }

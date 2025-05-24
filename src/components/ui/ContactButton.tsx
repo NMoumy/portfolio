@@ -11,7 +11,7 @@ const ContactButton = () => {
 
   return (
     <button
-      className="mt-2 glassmorphic py-3 px-7 rounded-lg hover:text-white"
+      className="mt-2 glassmorphic py-3 px-7 rounded-lg hover:bg-secondary/10 transition-all duration-200 text-white text-lg font-semibold border border-white/10 focus:outline-none"
       onClick={handleClick}
     >
       Me contacter
