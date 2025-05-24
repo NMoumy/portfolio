@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React from "react";
-import { IoIosArrowRoundForward } from "react-icons/io";
 
 type Project = {
   name: string;
@@ -23,10 +22,9 @@ const ContainerProject = ({ project }: ContainerProjectProps) => {
         <p className="text-xs mb-4">
           <strong>Technologies :</strong> {project.technologies.join(", ")}
         </p>
-        <div className="flex flex-row hover-underline-animation">
-          <Link href={`/projects/${project.projectId}`} className="flex items-center gap-2 w-fit text-tertiary">
-            <span className="">En savoir plus</span>
-            <IoIosArrowRoundForward className="w-8 h-8 rotate-[-45deg]" />
+        <div className="hover-underline-animation bg-primary rounded-lg">
+          <Link href={`/projects/${project.projectId}`} className="flex items-center gap-2 w-fit text-tertiary p-3">
+            En savoir plus
           </Link>
         </div>
       </div>

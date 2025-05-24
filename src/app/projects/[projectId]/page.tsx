@@ -1,21 +1,13 @@
 import projectData from "../../../lib/data/projectData.json";
+import ProjectDetails from "@/components/sections/ProjectPage";
 
-export default async function Page({ params }: { params: { projectId: string } }) {
-  const project = projectData.find(
-    (p) => p.projectId === params.projectId
-  );
+export default async function Page({ params }: { params: Promise<{ projectId: string }> }) {
+  const { projectId } = await params;
+  const project = projectData.find((p) => p.projectId === projectId);
 
   if (!project) {
     return <h1>Projet introuvable</h1>;
   }
 
-  return (
-    <section className="min-h-screen p-8">
-      <h1 className="text-3xl font-bold mb-4">{project.name}</h1>
-      <p className="mb-2">{project.description}</p>
-      <p className="mb-2">
-        <strong>Technologies :</strong> {project.technologies.join(", ")}
-      </p>
-    </section>
-  );
+  return <ProjectDetails project={project} />;
 }
