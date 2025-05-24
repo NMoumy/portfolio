@@ -1,10 +1,6 @@
 import projectData from "../../../lib/data/projectData.json";
 
-type Props = {
-  params: { projectId: string };
-};
-
-const Page = ({ params }: Props) => {
+export default function Page({ params }: { params: { projectId: string } }) {
   const project = projectData.find(
     (p) => p.projectId === params.projectId
   );
@@ -22,6 +18,4 @@ const Page = ({ params }: Props) => {
       </p>
     </section>
   );
-};
-
-export default Page;
+}
