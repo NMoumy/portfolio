@@ -32,7 +32,7 @@ const NavBar = () => {
         <div className="fixed top-0 right-0 h-1/3 w-50 glassmorphic shadow-lg overflow-hidden z-50 p-4 rounded-xl m-4 flex flex-col justify-center items-center">
           <button
             onClick={toggleMenu}
-            className="absolute top-0 p-3 right-0 text-2xl bg-secondary rounded-xl border border-white/10 hover:text-white"
+            className="absolute top-0 p-3 right-0 text-2xl bg-secondary rounded-xl border border-white/10 hover:border-tertiary/50  hover:text-white"
           >
             <FiX />
           </button>

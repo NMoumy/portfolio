@@ -75,27 +75,26 @@
     @apply max-h-[1000px];
   }
 
-    /* Personnalisation de la scrollbar pour Chrome, Edge, Safari */
+  /* Personnalisation de la scrollbar pour Chrome, Edge, Safari */
   ::-webkit-scrollbar {
     width: 8px;
     background: transparent;
   }
-  
+
   ::-webkit-scrollbar-thumb {
     background: var(--color-white);
     border-radius: 8px;
   }
-  
+
   ::-webkit-scrollbar-thumb:hover {
     background: var(--color-blue-500);
   }
-  
+
   /* Pour Firefox */
   * {
     scrollbar-width: thin;
     scrollbar-color: var(--accent) transparent;
   }
-
 }
 
 /* Couche de composants */
@@ -242,7 +241,7 @@
 }
 
 .hover-underline-animation::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);

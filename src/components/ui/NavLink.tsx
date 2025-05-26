@@ -15,7 +15,7 @@ const NavLink: React.FC<NavLinkProps> = ({ href, label, onClick }) => {
       <Link
         href={href}
         onClick={onClick}
-        className="block text-white hover:bg-secondary hover:border border-white/10 rounded-md px-3 py-2 transition"
+        className="block text-white px-3 py-2 hover-underline-animation"
       >
         {label}
       </Link>

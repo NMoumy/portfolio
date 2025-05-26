@@ -17,7 +17,7 @@ type ContainerProjectProps = {
 const ContainerProject = ({ project }: ContainerProjectProps) => {
   return (
     <div className="glassmorphic rounded-lg shadow-lg h-[450px] w-full overflow-hidden flex items-center flex-col p-2">
-      <div className="h-[45%] w-11/12 bg-gray-200 rounded-lg overflow-hidden">
+      <div className="h-[45%] w-full bg-gray-200 rounded-lg overflow-hidden">
         <Image
           src={project.imageUrl || "/projects/defaultImage.png"}
           alt={project.name}
@@ -32,7 +32,7 @@ const ContainerProject = ({ project }: ContainerProjectProps) => {
         <p className="text-xs mb-4">
           <strong>Technologies :</strong> {project.technologies.slice(0, 3).join(", ")}
         </p>
-        <div className="hover-underline-animation bg-primary rounded-lg align-end">
+        <div className="hover-underline-animation bg-primary rounded-lg align-end overflow-hidden">
           <Link href={`/projects/${project.projectId}`} className="flex items-center gap-2 w-fit text-tertiary p-3">
             En savoir plus
           </Link>

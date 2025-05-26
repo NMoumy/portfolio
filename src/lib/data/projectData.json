@@ -2,12 +2,14 @@
   {
     "name": "Fotosphere",
     "imageUrl": "/projects/fotosphere.png",
-    "description": "Un jeu de combat en 3D inspiré de Mortal Kombat, développé en équipe.",
+    "description": "Une application mobile de type réseau social pour partager des photos",
     "content": "FotoSphere est une application mobile conçue dans le cadre de mon projet de fin d'étude, en technique d'intégration multimédia. L'objectif principal de cette application est de permettre aux utilisateurs de partager, d'aimer et de commenter des photos. Il s'agissait de créer une plateforme interactive de partage d'images où les utilisateurs peuvent interagir avec du contenu visuel.",
     "author": "Moumy Ndiaye",
     "date": "2024-05-13",
     "technologies": ["React Native", "Expo", "Firebase", "SCSS"],
-    "projectId": "1"
+    "projectId": "fotosphere",
+    "githubUrl": "https://github.com/NMoumy/fotosphere",
+    "projectUrl": "https://github.com/NMoumy/fotosphere/releases/tag/v1.0.0"
   },
   {
     "name": "Jeu de combat",
@@ -17,16 +19,32 @@
     "author": "Moumy Ndiaye",
     "date": "2024-05-16",
     "technologies": ["Unity", "C#"],
-    "projectId": "2"
+    "projectId": "jeu-de-combat",
+    "githubUrl": "https://github.com/LaVengeanceDesRoyaumes/LaVengeanceDesRoyaumes",
+    "projectUrl": "https://audrey808.itch.io/la-vengeance-des-royaumes"
   },
   {
-    "name": "Portfolio",
-    "imageUrl": "/projects/defaultImage.png",
-    "description": "Mon portfolio personnel, développé avec React.",
-    "content": "Ce portfolio est le résultat de mon apprentissage en développement web. Il présente mes projets, mes compétences et mon parcours professionnel. J'ai utilisé React pour construire l'interface utilisateur et j'ai intégré des animations pour améliorer l'expérience utilisateur.",
+    "name": "Application température",
+    "imageUrl": "/projects/portfolio.png",
+    "description": "Application monopage React affichant la température et l'humidité d'un capteur SHT30 en temps réel.",
+    "content": "Cette application monopage React affiche en temps réel la température et l'humidité grâce à un capteur SHT30 connecté à un ESP32. Pour développer l'application, j'ai utilisé Firebase pour assurer le stockage des données en temps réel. De plus, j'ai programmé en C++ avec l'IDE Arduino afin de récupérer les données du SHT30 et les envoyer dans une base de données. Important : Les mises à jour de température ne sont pas affichées car la carte de développement n'est pas branchée.",
     "author": "Moumy Ndiaye",
-    "date": "2024-05-16",
-    "technologies": ["React", "CSS", "JavaScript"],
-    "projectId": "3"
+    "date": "2023-12-05",
+    "technologies": ["React", "Tailwind", "Typescript"],
+    "projectId": "application-temperature",
+    "githubUrl": "https://github.com/NMoumy/appli-temperature",
+    "projectUrl": "https://appli-temperature.vercel.app/"
+  },
+  {
+    "name": "Portfolio 2025",
+    "imageUrl": "/projects/portfolio.png",
+    "description": "Mon portfolio personnel, développé avec NextJs.",
+    "content": "Ce projet est mon portfolio 2025, j'ai décidé de le faire en NextJs pour pouvoir avoir un site plus moderne et responsive.",
+    "author": "Moumy Ndiaye",
+    "date": "2025-05-26",
+    "technologies": ["NextJs", "Tailwind", "Typescript"],
+    "projectId": "portfolio",
+    "githubUrl": "https://github.com/NMoumy/portfolio",
+    "projectUrl": "https://portfolio-2025-red-phi.vercel.app/"
   }
 ]

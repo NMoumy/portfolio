@@ -17,32 +17,39 @@ const Projects = () => {
       </h2>
 
       <div className="flex flex-grow justify-center items-center relative">
-        {/* Swiper Carousel */}
-        <Swiper
-          modules={[Navigation, Pagination]}
-          spaceBetween={10}
-          slidesPerView={1}
-          navigation={{
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          }}
-          breakpoints={{
-            500: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
-          }}
-          className="w-10/12"
-        >
-          {projectData.map((project, index) => (
-            <SwiperSlide key={index}>
-              <ContainerProject project={project} />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-
-        {/* Custom Controls */}
-        <div className="flex items-center justify-center mt-6 gap-6">
-          <div className="swiper-button-prev cursor-pointer text-3xl text-white"></div>
-          <div className="swiper-button-next cursor-pointer text-3xl text-white"></div>
+        <div className="w-full max-w-[1400px] px-12">
+          {/* Swiper Carousel */}
+          <Swiper
+            modules={[Navigation, Pagination]}
+            spaceBetween={20}
+            slidesPerView={1}
+            navigation={true}
+            pagination={{
+              clickable: true,
+              dynamicBullets: true,
+            }}
+            breakpoints={{
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+              },
+            }}
+            className="swiper-container"
+          >
+            {projectData.map((project, index) => (
+              <SwiperSlide key={index} className="pb-12">
+                <ContainerProject project={project} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
     </section>
