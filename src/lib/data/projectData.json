@@ -17,18 +17,12 @@
     "projectId": "2"
   },
   {
-    "name": "Application température",
-    "description": "A web application to manage daily tasks and projects.",
+    "name": "Portfolio",
+    "imageUrl": "/projects/portfolio.png",
+    "description": "Mon portfolio personnel, développé avec React.",
+    "content": "Ce portfolio est le résultat de mon apprentissage en développement web. Il présente mes projets, mes compétences et mon parcours professionnel. J'ai utilisé React pour construire l'interface utilisateur et j'ai intégré des animations pour améliorer l'expérience utilisateur.",
     "author": "Moumy Ndiaye",
-    "technologies": ["Vue.js", "Firebase"],
+    "technologies": ["React", "CSS", "JavaScript"],
     "projectId": "3"
-  },
-  {
-    "name": "Blog CMS",
-    "description": "A content management system for creating and managing blog posts.",
-    "author": "Moumy Ndiaye",
-    "technologies": ["Django", "PostgreSQL"],
-    "projectId": "4"
-
   }
 ]

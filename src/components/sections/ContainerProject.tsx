@@ -26,13 +26,13 @@ const ContainerProject = ({ project }: ContainerProjectProps) => {
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="pt-4 w-11/12 display-flex flex-col items-end h-[55%]">
-        <h3 className="text-xl font-bold mb-2 text-center pb-2">{project.name}</h3>
+      <div className="pt-4 w-11/12 flex flex-col items-start justify-between h-[55%]">
+        <h3 className="text-xl font-bold mb-2 self-center pb-2">{project.name}</h3>
         <p className="text-sm mb-4">{project.description}</p>
         <p className="text-xs mb-4">
           <strong>Technologies :</strong> {project.technologies.slice(0, 3).join(", ")}
         </p>
-        <div className="hover-underline-animation bg-primary rounded-lg self-end">
+        <div className="hover-underline-animation bg-primary rounded-lg align-end">
           <Link href={`/projects/${project.projectId}`} className="flex items-center gap-2 w-fit text-tertiary p-3">
             En savoir plus
           </Link>
