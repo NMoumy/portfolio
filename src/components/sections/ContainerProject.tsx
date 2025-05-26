@@ -26,7 +26,7 @@ const ContainerProject = ({ project }: ContainerProjectProps) => {
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="pt-4 w-11/12 flex flex-col items-start justify-between h-[55%]">
+      <div className="py-4 w-11/12 flex flex-col items-start justify-between h-[55%]">
         <h3 className="text-xl font-bold mb-2 self-center pb-2">{project.name}</h3>
         <p className="text-sm mb-4">{project.description}</p>
         <p className="text-xs mb-4">
