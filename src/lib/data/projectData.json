@@ -3,8 +3,9 @@
     "name": "Fotosphere",
     "imageUrl": "/projects/fotosphere.png",
     "description": "Un jeu de combat en 3D inspiré de Mortal Kombat, développé en équipe.",
-    "content": "Dans le cadre de mon cours sur la création de jeux en équipe, j'ai dû concevoir un jeu avec une équipe de 4 personnes. Pour notre projet, nous avons choisi de créer un jeu de style Mortal Kombat en 3D, où deux royaumes s'affrontent. Mon rôle au sein de l'équipe consistait à prendre en charge le système de combat et à concevoir toutes les interfaces du jeu.",
+    "content": "FotoSphere est une application mobile conçue dans le cadre de mon projet de fin d'étude, en technique d'intégration multimédia. L'objectif principal de cette application est de permettre aux utilisateurs de partager, d'aimer et de commenter des photos. Il s'agissait de créer une plateforme interactive de partage d'images où les utilisateurs peuvent interagir avec du contenu visuel.",
     "author": "Moumy Ndiaye",
+    "date": "2024-05-13",
     "technologies": ["React Native", "Expo", "Firebase", "SCSS"],
     "projectId": "1"
   },
@@ -14,6 +15,7 @@
     "description": "Un jeu de combat en 3D inspiré de Mortal Kombat, développé en équipe.",
     "content": "Dans le cadre de mon cours sur la création de jeux en équipe, j'ai dû concevoir un jeu avec une équipe de 4 personnes. Pour notre projet, nous avons choisi de créer un jeu de style Mortal Kombat en 3D, où deux royaumes s'affrontent. Mon rôle au sein de l'équipe consistait à prendre en charge le système de combat et à concevoir toutes les interfaces du jeu.",
     "author": "Moumy Ndiaye",
+    "date": "2024-05-16",
     "technologies": ["Unity", "C#"],
     "projectId": "2"
   },
@@ -23,6 +25,7 @@
     "description": "Mon portfolio personnel, développé avec React.",
     "content": "Ce portfolio est le résultat de mon apprentissage en développement web. Il présente mes projets, mes compétences et mon parcours professionnel. J'ai utilisé React pour construire l'interface utilisateur et j'ai intégré des animations pour améliorer l'expérience utilisateur.",
     "author": "Moumy Ndiaye",
+    "date": "2024-05-16",
     "technologies": ["React", "CSS", "JavaScript"],
     "projectId": "3"
   }
