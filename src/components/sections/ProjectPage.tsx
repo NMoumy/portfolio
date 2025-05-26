@@ -8,13 +8,14 @@ type Project = {
 };
 
 const ProjectPage = ({ project }: { project: Project }) => (
-  <section className="min-h-screen p-8">
-    <h1 className="text-3xl font-bold mb-4">{project.name}</h1>
-    <p className="mb-2">{project.description}</p>
-    <p className="mb-2">
-      <strong>Technologies :</strong> {project.technologies.join(", ")}
-    </p>
+  <section className="h-screen p-8 flex-center w-full">
+    <div className="glassmorphic w-3/4 lg:w-[900px] h-3/4 p-10 rounded-lg">
+      <h2 className=" font-bold mb-4 text-center">{project.name}</h2>
+      <p className="mb-2">{project.description}</p>
+      <p className="mb-2">
+        <strong>Technologies :</strong> {project.technologies.join(", ")}
+      </p>
+    </div>
   </section>
 );
-
 export default ProjectPage;

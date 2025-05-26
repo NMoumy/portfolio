@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -6,6 +7,7 @@ type Project = {
   description: string;
   technologies: string[];
   projectId: string;
+  imageUrl: string | null;
 };
 
 type ContainerProjectProps = {
@@ -14,15 +16,23 @@ type ContainerProjectProps = {
 
 const ContainerProject = ({ project }: ContainerProjectProps) => {
   return (
-    <div className="glassmorphic rounded-lg shadow-lg h-[450px] w-full overflow-hidden">
-      <div className="h-1/2 w-full bg-gray-200"></div>
-      <div className="p-4">
+    <div className="glassmorphic rounded-lg shadow-lg h-[450px] w-full overflow-hidden flex items-center flex-col p-2">
+      <div className="h-[45%] w-11/12 bg-gray-200 rounded-lg overflow-hidden">
+        <Image
+          src={project.imageUrl || "/projects/defaultImage.png"}
+          alt={project.name}
+          width={500}
+          height={250}
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="pt-4 w-11/12 display-flex flex-col items-end h-[55%]">
         <h3 className="text-xl font-bold mb-2 text-center pb-2">{project.name}</h3>
         <p className="text-sm mb-4">{project.description}</p>
         <p className="text-xs mb-4">
-          <strong>Technologies :</strong> {project.technologies.join(", ")}
+          <strong>Technologies :</strong> {project.technologies.slice(0, 3).join(", ")}
         </p>
-        <div className="hover-underline-animation bg-primary rounded-lg">
+        <div className="hover-underline-animation bg-primary rounded-lg self-end">
           <Link href={`/projects/${project.projectId}`} className="flex items-center gap-2 w-fit text-tertiary p-3">
             En savoir plus
           </Link>
