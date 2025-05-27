@@ -16,14 +16,14 @@ type ContainerProjectProps = {
 
 const ContainerProject = ({ project }: ContainerProjectProps) => {
   return (
-    <div className="glassmorphic rounded-lg shadow-lg h-[450px] w-full overflow-hidden flex items-center flex-col p-2">
-      <div className="h-[45%] w-full bg-gray-200 rounded-lg overflow-hidden">
+    <div className="glassmorphic rounded-lg shadow-lg h-[400px] sm:h-[450px] w-full max-w-[400px] mx-auto overflow-hidden flex items-center flex-col p-2 sm:p-4">
+      <div className="relative h-[45%] w-full rounded-lg overflow-hidden">
         <Image
           src={project.imageUrl || "/projects/defaultImage.png"}
           alt={project.name}
-          width={500}
-          height={250}
-          className="w-full h-full object-cover"
+          fill
+          className="object-cover"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>
       <div className="py-4 w-11/12 flex flex-col items-start justify-between h-[55%]">

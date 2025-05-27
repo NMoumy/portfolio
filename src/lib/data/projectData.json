@@ -25,12 +25,12 @@
   },
   {
     "name": "Application température",
-    "imageUrl": "/projects/portfolio.png",
+    "imageUrl": "/projects/appliTemperature.png",
     "description": "Application monopage React affichant la température et l'humidité d'un capteur SHT30 en temps réel.",
-    "content": "Cette application monopage React affiche en temps réel la température et l'humidité grâce à un capteur SHT30 connecté à un ESP32. Pour développer l'application, j'ai utilisé Firebase pour assurer le stockage des données en temps réel. De plus, j'ai programmé en C++ avec l'IDE Arduino afin de récupérer les données du SHT30 et les envoyer dans une base de données. Important : Les mises à jour de température ne sont pas affichées car la carte de développement n'est pas branchée.",
+    "content": "Ce projet est une application monopage React qui affiche en temps réel la température et l'humidité grâce à un capteur SHT30 connecté à un ESP32. Pour développer l'application, j'ai utilisé Firebase pour assurer le stockage des données en temps réel. De plus, j'ai programmé en C++ avec l'IDE Arduino afin de récupérer les données du SHT30 et les envoyer dans une base de données. Important : Les mises à jour de température ne sont pas affichées car la carte de développement n'est pas branchée.",
     "author": "Moumy Ndiaye",
     "date": "2023-12-05",
-    "technologies": ["React", "Tailwind", "Typescript"],
+    "technologies": ["Arduino", "C++", "firebase", "React"],
     "projectId": "application-temperature",
     "githubUrl": "https://github.com/NMoumy/appli-temperature",
     "projectUrl": "https://appli-temperature.vercel.app/"

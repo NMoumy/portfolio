@@ -257,3 +257,81 @@
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+/*//////////////////////// Code generer //////////////////////////*/
+
+/* Swiper Navigation Styles */
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: var(--primary) !important;
+  width: 35px !important;
+  height: 35px !important;
+  border-radius: 50% !important;
+  border: 2px solid var(--accent) !important;
+  transition: all 0.3s ease !important;
+  margin: 0 !important;
+  position: static !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  z-index: 20 !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 16px !important;
+  color: var(--accent) !important;
+  font-weight: bold !important;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: var(--accent) !important;
+  transform: scale(1.1) !important;
+}
+
+.swiper-button-next:hover:after,
+.swiper-button-prev:hover:after {
+  color: var(--primary) !important;
+}
+
+@media (max-width: 640px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 14px !important;
+  }
+}
+
+/* Swiper Container Styles */
+.swiper-container {
+  overflow: visible !important;
+  padding: 0 !important;
+}
+
+/* Swiper Pagination Styles */
+.swiper-pagination {
+  position: relative !important;
+  bottom: 0 !important;
+  margin-top: 20px !important;
+}
+
+.swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+  background: var(--primary) !important;
+  border: 1px solid var(--accent) !important;
+  opacity: 0.5 !important;
+  transition: all 0.3s ease !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--accent) !important;
+  opacity: 1 !important;
+  transform: scale(1.2) !important;
+}
