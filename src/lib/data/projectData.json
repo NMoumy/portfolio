@@ -17,7 +17,7 @@
     "description": "Un jeu de combat en 3D inspiré de Mortal Kombat, développé en équipe.",
     "content": "Dans le cadre de mon cours sur la création de jeux en équipe, j'ai dû concevoir un jeu avec une équipe de 4 personnes. Pour notre projet, nous avons choisi de créer un jeu de style Mortal Kombat en 3D, où deux royaumes s'affrontent. Mon rôle au sein de l'équipe consistait à prendre en charge le système de combat et à concevoir toutes les interfaces du jeu.",
     "author": "Moumy Ndiaye",
-    "date": "2024-05-16",
+    "date": "2023-05-10",
     "technologies": ["Unity", "C#"],
     "projectId": "jeu-de-combat",
     "githubUrl": "https://github.com/LaVengeanceDesRoyaumes/LaVengeanceDesRoyaumes",
@@ -26,7 +26,7 @@
   {
     "name": "Application température",
     "imageUrl": "/projects/appliTemperature.png",
-    "description": "Application monopage React affichant la température et l'humidité d'un capteur SHT30 en temps réel.",
+    "description": "Application affichant la température et l'humidité d'un capteur SHT30 en temps réel.",
     "content": "Ce projet est une application monopage React qui affiche en temps réel la température et l'humidité grâce à un capteur SHT30 connecté à un ESP32. Pour développer l'application, j'ai utilisé Firebase pour assurer le stockage des données en temps réel. De plus, j'ai programmé en C++ avec l'IDE Arduino afin de récupérer les données du SHT30 et les envoyer dans une base de données. Important : Les mises à jour de température ne sont pas affichées car la carte de développement n'est pas branchée.",
     "author": "Moumy Ndiaye",
     "date": "2023-12-05",

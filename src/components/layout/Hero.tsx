@@ -30,7 +30,7 @@ const Hero = () => {
         />
         <h1 className="">Salut ! Mon nom est</h1>
         <h1 className="text-accent focus-in-expand">Moumy Ndiaye</h1>
-        <p className="text-lg p-2">Je suis une développeuse logiciel</p>
+        <p className="text-lg p-2">Je suis développeuse logiciel</p>
         <ContactButton />
       </div>
     </header>
