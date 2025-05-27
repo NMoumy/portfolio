@@ -29,7 +29,7 @@ const Hero = () => {
           className="absolute right-[-70px] top-[-40px] hidden sm:block"
         />
         <h1 className="">Salut ! Mon nom est</h1>
-        <h1 className="text-accent focus-in-expand">Moumy Ndiaye</h1>
+        <h1 className="text-accent">Moumy Ndiaye</h1>
         <p className="text-lg p-2">Je suis développeuse logiciel</p>
         <ContactButton />
       </div>
